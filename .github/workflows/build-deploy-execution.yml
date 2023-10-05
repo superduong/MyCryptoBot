@@ -15,7 +15,7 @@ on:
 env:
   DIRECTORY: execution
   HEROKU_PROCESS: web
-  HEROKU_API_KEY: ${{ f8772948-f042-416d-9eca-10bc70f33a37 }}
+  HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
   HEROKU_EMAIL: ${{ secrets.HEROKU_EMAIL }}
   HEROKU_APP_NAME: ${{ secrets.HEROKU_EXECUTION_APP_NAME }}
   BINANCE_API_KEY: ${{ secrets.BINANCE_API_KEY }}
