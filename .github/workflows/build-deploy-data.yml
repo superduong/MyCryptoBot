@@ -91,7 +91,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Login to heroku container registry
         run: |
-          echo ${{ secrets.HEROKU_API_KEY }} | docker login --username=${{ secrets.HEROKU_EMAIL }} registry.heroku.com --password-stdin
+          echo ${{ secrets.HEROKU_API_KEY }} | heroku container:login --username=${{ secrets.HEROKU_EMAIL }} registry.heroku.com --password-stdin
       - name: Deploy
         run: heroku container:release $HEROKU_PROCESS --app $HEROKU_APP_NAME
       - name: Run database migrations
