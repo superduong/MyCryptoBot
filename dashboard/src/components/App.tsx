@@ -180,7 +180,7 @@ class App extends Component<Props, State> {
 
         this.updatePositions()
 
-        this.getAccountBalance()
+        // this.getAccountBalance()
 
         this.getTotalEquityTimeSeries()
 
