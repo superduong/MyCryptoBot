@@ -106,10 +106,11 @@ class App extends Component<Props, State> {
             baseDecimal: 3
         },
         menuProperties: [
-            {icon: 'line graph', emoji: '📈', text: 'Dashboard', code: "/dashboard"},
-            {icon: 'play', emoji: '🤖', text: 'Trading Bots', code: "/pipelines"},
-            {icon: 'list', emoji: '📒', text: 'Positions', code: "/positions"},
-            {icon: 'dollar', emoji: '💵', text: 'Trades', code: "/trades"},
+            {icon: 'line graph', emoji: '💹', text: 'Dashboard', code: "/dashboard"},
+            {icon: 'play', emoji: '🦸🏻‍♂️', text: 'Market Live', code: "/pipelines"},
+            {icon: 'list', emoji: '🚩', text: 'Positions', code: "/positions"},
+            {icon: 'dollar', emoji: '💰', text: 'Trades', code: "/trades"},
+            {icon: 'dollar', emoji: '🌐', text: 'Community', code: "/community"},
         ]
     }
 
