@@ -140,28 +140,30 @@ function Dashboard(props: Props) {
               <Grid.Row style={rowStyle} className="flex-row">
               <Segment secondary raised style={{...styles.rowSegment, width: isMobile ? '100%' : '44%'}}>
                 <Header size={'medium'} color="blue">
-                  Equity
+                  ALLIN.GLOBAL
                   <Label basic color='blue' >
                     {'live'}
                   </Label>
                 </Header>
-                <Grid columns={2}>
+                <Grid columns={3}>
                   <Grid.Row>
                     <Grid.Column>
                       <Grid.Column style={styles.balanceHeader}>
-                        Total Equity
+                        Số Dư Ví
                       </Grid.Column>
                       <Grid.Column style={styles.balanceColumn} >
                         {/*@ts-ignore*/}
-                        {`${balances.live.USDT.totalBalance.toFixed(1)} $USDT`}
+                        {/* 53464236 */}
+                        {`${balances.live.USDT.totalBalance.toFixed(1)} USDT`}
                       </Grid.Column>
                     </Grid.Column>
                     <Grid.Column>
                       <Grid.Column style={styles.balanceHeader}>
-                        Available Equity
+                        Số Dư Margin
                       </Grid.Column>
                       <Grid.Column style={styles.balanceColumn} >
                         {/*@ts-ignore*/}
+                        {/* 111 */}
                         {`${balances.live.USDT.availableBalance.toFixed(1)} $USDT`}
                       </Grid.Column>
                     </Grid.Column>
@@ -171,20 +173,21 @@ function Dashboard(props: Props) {
               </Segment>
               <Segment secondary raised style={{...styles.rowSegment, width: isMobile ? '100%' : '44%'}}>
                 <Header size={'medium'} color="blue">
-                  Equity
+                  KOI
                   <Label basic color='blue' >
                     {'test'}
                   </Label>
                 </Header>
-                <Grid columns={2}>
+                <Grid columns={3}>
                   <Grid.Row>
                     <Grid.Column>
                       <Grid.Column style={styles.balanceHeader}>
-                        Total Equity
+                      Số Dư Ví
                       </Grid.Column>
                       <Grid.Column style={styles.balanceColumn} >
                         {/*@ts-ignore*/}
-                        {`${balances.test.USDT.totalBalance.toFixed(1)} $USDT`}
+                        {/* 43522 */}
+                        {`${balances.test.USDT.totalBalance.toFixed(3)} $USDT`}
                       </Grid.Column>
                     </Grid.Column>
                     <Grid.Column>
@@ -193,19 +196,169 @@ function Dashboard(props: Props) {
                       </Grid.Column>
                       <Grid.Column style={styles.balanceColumn} >
                         {/*@ts-ignore*/}
+                        {/* 869876976346 */}
                         {`${balances.test.USDT.availableBalance.toFixed(1)} $USDT`}
                       </Grid.Column>
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
+              
                 <PortfolioChart dataProp={equityTimeSeries.test}/>
               </Segment>
             </Grid.Row>
+
+
+
+            <Grid.Row style={rowStyle} className="flex-row">
+              <Segment secondary raised style={{...styles.rowSegment, width: isMobile ? '100%' : '44%'}}>
+                <Header size={'medium'} color="blue">
+                  TOKYO
+                  <Label basic color='blue' >
+                    {'live'}
+                  </Label>
+                </Header>
+                <Grid columns={3}>
+                  <Grid.Row>
+                    <Grid.Column>
+                      <Grid.Column style={styles.balanceHeader}>
+                        Số Dư Ví
+                      </Grid.Column>
+                      <Grid.Column style={styles.balanceColumn} >
+                        {/*@ts-ignore*/}
+                        {/* 53464236 */}
+                        {`${balances.live.USDT.totalBalance.toFixed(1)} USDT`}
+                      </Grid.Column>
+                    </Grid.Column>
+                    <Grid.Column>
+                      <Grid.Column style={styles.balanceHeader}>
+                        Số Dư Margin
+                      </Grid.Column>
+                      <Grid.Column style={styles.balanceColumn} >
+                        {/*@ts-ignore*/}
+                        {/* 111 */}
+                        {`${balances.live.USDT.availableBalance.toFixed(1)} $USDT`}
+                      </Grid.Column>
+                    </Grid.Column>
+                  </Grid.Row>
+                </Grid>
+                <PortfolioChart dataProp={equityTimeSeries.live}/>
+              </Segment>
+              <Segment secondary raised style={{...styles.rowSegment, width: isMobile ? '100%' : '44%'}}>
+                <Header size={'medium'} color="blue">
+                  NEW YORK
+                  <Label basic color='blue' >
+                    {'test'}
+                  </Label>
+                </Header>
+                <Grid columns={3}>
+                  <Grid.Row>
+                    <Grid.Column>
+                      <Grid.Column style={styles.balanceHeader}>
+                        Số Dư Ví
+                      </Grid.Column>
+                      <Grid.Column style={styles.balanceColumn} >
+                        {/*@ts-ignore*/}
+                        {/* 43522 */}
+                        {`${balances.test.USDT.totalBalance.toFixed(3)} $USDT`}
+                      </Grid.Column>
+                    </Grid.Column>
+                    <Grid.Column>
+                      <Grid.Column style={styles.balanceHeader}>
+                        Available Equity
+                      </Grid.Column>
+                      <Grid.Column style={styles.balanceColumn} >
+                        {/*@ts-ignore*/}
+                        {/* 869876976346 */}
+                        {`${balances.test.USDT.availableBalance.toFixed(1)} $USDT`}
+                      </Grid.Column>
+                    </Grid.Column>
+                  </Grid.Row>
+                </Grid>
+              
+                <PortfolioChart dataProp={equityTimeSeries.test}/>
+              </Segment>
+            </Grid.Row>
+
+            
+
+            <Grid.Row style={rowStyle} className="flex-row">
+              <Segment secondary raised style={{...styles.rowSegment, width: isMobile ? '100%' : '44%'}}>
+                <Header size={'medium'} color="blue">
+                  SINGAPORE 
+                  <Label basic color='blue' >
+                    {'live'}
+                  </Label>
+                </Header>
+                <Grid columns={3}>
+                  <Grid.Row>
+                    <Grid.Column>
+                      <Grid.Column style={styles.balanceHeader}>
+                        Số Dư Ví
+                      </Grid.Column>
+                      <Grid.Column style={styles.balanceColumn} >
+                        {/*@ts-ignore*/}
+                        {/* 53464236 */}
+                        {`${balances.live.USDT.totalBalance.toFixed(1)} USDT`}
+                      </Grid.Column>
+                    </Grid.Column>
+                    <Grid.Column>
+                      <Grid.Column style={styles.balanceHeader}>
+                        Số Dư Margin
+                      </Grid.Column>
+                      <Grid.Column style={styles.balanceColumn} >
+                        {/*@ts-ignore*/}
+                        {/* 111 */}
+                        {`${balances.live.USDT.availableBalance.toFixed(1)} $USDT`}
+                      </Grid.Column>
+                    </Grid.Column>
+                  </Grid.Row>
+                </Grid>
+                <PortfolioChart dataProp={equityTimeSeries.live}/>
+              </Segment>
+              <Segment secondary raised style={{...styles.rowSegment, width: isMobile ? '100%' : '44%'}}>
+                <Header size={'medium'} color="blue">
+                  NGOCLE.26.05
+                  <Label basic color='blue' >
+                    {'test'}
+                  </Label>
+                </Header>
+                <Grid columns={3}>
+                  <Grid.Row>
+                    <Grid.Column>
+                      <Grid.Column style={styles.balanceHeader}>
+                        Số Dư Ví
+                      </Grid.Column>
+                      <Grid.Column style={styles.balanceColumn} >
+                        {/*@ts-ignore*/}
+                        {/* 43522 */}
+                        {`${balances.test.USDT.totalBalance.toFixed(3)} $USDT`}
+                      </Grid.Column>
+                    </Grid.Column>
+                    <Grid.Column>
+                      <Grid.Column style={styles.balanceHeader}>
+                        Available Equity
+                      </Grid.Column>
+                      <Grid.Column style={styles.balanceColumn} >
+                        {/*@ts-ignore*/}
+                        {/* 869876976346 */}
+                        {`${balances.test.USDT.availableBalance.toFixed(1)} $USDT`}
+                      </Grid.Column>
+                    </Grid.Column>
+                  </Grid.Row>
+                </Grid>
+              
+                <PortfolioChart dataProp={equityTimeSeries.test}/>
+              </Segment>
+            </Grid.Row>
+
+
+
+
             <Grid.Row style={rowStyle} className="flex-row">
               <Segment secondary raised style={{...styles.rowSegment, width: isMobile ? '100%' : '44%'}}>
                 <Link to="/pipelines">
                   <Header size={'medium'} color="teal">
-                    Trading Bots
+                    Các Siêu Chiến Binh
                   </Header>
                   <Grid columns={2}>
                     <Grid.Row>
@@ -292,7 +445,7 @@ function Dashboard(props: Props) {
                   Currencies
                 </Header>
                 <Grid>
-                  <Grid.Row columns={2}>
+                  <Grid.Row columns={3}>
                     <Grid.Column>
                       <CustomPieChart title={'Positions'} pieChartData={positionsPieChartData}/>
                     </Grid.Column>
@@ -305,6 +458,9 @@ function Dashboard(props: Props) {
             </Grid.Row>
         </Grid>
       </StyledSegment>
+
+    
+
   );
 }
 
