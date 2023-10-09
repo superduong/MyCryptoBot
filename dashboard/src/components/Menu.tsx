@@ -75,6 +75,7 @@ export default AppMenu;
 const styles = {
   fontSize: '1.1em',
   padding: '15px',
-  color: 'rgb(57, 57, 57)',
+  //color: 'rgb(57, 57, 57)',
+  color: 'rgb(53, 156, 89)',
   fontWeight: 'bold',
 }
