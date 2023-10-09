@@ -211,7 +211,7 @@ class App extends Component<Props, State> {
             clearInterval(this.getPipelinesPnlInterval)
 
             if (pathname.includes('/dashboard')) {
-                this.getAccountBalance()
+                //this.getAccountBalance()
                 this.getTotalEquityTimeSeries()
                 this.getCurrentPrices()
                 this.getPricesInterval = setInterval(() => {
