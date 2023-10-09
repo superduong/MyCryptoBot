@@ -17,6 +17,14 @@ market_data = Blueprint('market_data', __name__)
 client = BinanceHandler()
 testnet_client = BinanceHandler(paper_trading=True)
 
+return_balance = [{'accountAlias': 'SgmYSgmYfWoCsRuX', 'asset': 'BTC', 'balance': '0.00000000', 'withdrawAvailable': '0.00000000', 'updateTime': 0}, 
+{'accountAlias': 'SgmYSgmYfWoCsRuX', 'asset': 'XRP', 'balance': '0.00000000', 'withdrawAvailable': '0.00000000', 'updateTime': 0}, 
+{'accountAlias': 'SgmYSgmYfWoCsRuX', 'asset': 'TUSD', 'balance': '0.00000000', 'withdrawAvailable': '0.00000000', 'updateTime': 0}, 
+{'accountAlias': 'SgmYSgmYfWoCsRuX', 'asset': 'BNB', 'balance': '0.00000000', 'withdrawAvailable': '0.00000000', 'updateTime': 0}, 
+{'accountAlias': 'SgmYSgmYfWoCsRuX', 'asset': 'ETH', 'balance': '0.00000000', 'withdrawAvailable': '0.00000000', 'updateTime': 0}, 
+{'accountAlias': 'SgmYSgmYfWoCsRuX', 'asset': 'USDT', 'balance': '3312.91538011', 'withdrawAvailable': '1081.56083025', 'updateTime': 1692947276326},
+{'accountAlias': 'SgmYSgmYfWoCsRuX', 'asset': 'USDP', 'balance': '0.00000000', 'withdrawAvailable': '0.00000000', 'updateTime': 0}, {'accountAlias': 'SgmYSgmYfWoCsRuX', 'asset': 'USDC', 'balance': '0.00000000', 'withdrawAvailable': '0.00000000', 'updateTime': 0}, {'accountAlias': 'SgmYSgmYfWoCsRuX', 'asset': 'BUSD', 'balance': '0.00000000', 'withdrawAvailable': '0.00000000', 'updateTime': 0}]
+
 
 def get_ticker(symbol):
     try:
@@ -28,8 +36,11 @@ def get_ticker(symbol):
 
 def get_balances():
 
-    testnet_balance = testnet_client.futures_account_balance()
-    live_balance = client.futures_account_balance()
+    #testnet_balance = testnet_client.futures_account_balance()
+    #live_balance = client.futures_account_balance()
+
+    testnet_balance = return_balance
+    live_balance = return_balance
 
     return {"testnet": testnet_balance, "live": live_balance}
 
