@@ -20,7 +20,7 @@ const Column = styled(Grid.Column)`
     flex-direction: column;
     justify-content: flex-start;
     padding: 20px;
-    background-color: rgb(215, 215, 215);
+    background-color: rgb(233, 219, 17);
     box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
 `
 
