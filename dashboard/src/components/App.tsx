@@ -495,7 +495,7 @@ class App extends Component<Props, State> {
         const menuOption = menuProperties.find(option => location.pathname.includes(option.code))
 
         return (
-            <AppDiv className="flex-row">
+            <AppDiv className="flex-row" style={{backgroundColor: "#80a824"}}>
                 <MenuWrapper
                   menuOption={menuOption}
                   menuProperties={menuProperties}
